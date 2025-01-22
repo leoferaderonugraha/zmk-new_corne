@@ -33,7 +33,7 @@
 
         rot_kp: sensor_rotate_kp {
             compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <0>;
+            #sensor-binding-cells = <1>;
             bindings = <&msc>, <&msc>;
         };
     };

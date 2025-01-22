@@ -30,12 +30,6 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
-
-        rot_kp: sensor_rotate_kp {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
-        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -73,7 +67,7 @@
 &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans         &rgb_ug RGB_EFF &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
                                          &trans        &trans         &trans                                                                         &kp INS          &kp DEL          &trans
             >;
-            sensor-bindings = <&rot_kp SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         raise_layer {
@@ -84,7 +78,7 @@
 &trans  &out OUT_USB     &out OUT_BLE  &none      &none      &mkp MB5  &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                     &trans     &trans     &kp SPACE                                                            &kp RET    &trans     &trans
             >;
-            sensor-bindings = <&rot_kp SCRL_RIGHT SCRL_LEFT>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_3 {

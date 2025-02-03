@@ -75,7 +75,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - HOME
+  - $$mdi:pan-up$$
   - PG UP
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB OFF
@@ -89,7 +89,7 @@ layers:
   - RGB SPI
   - RGB BRI
   - RGB BRD
-  - END
+  - $$mdi:pan-down$$
   - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
